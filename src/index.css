@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    min-width: 320px;
+    background:  linear-gradient( #011044, #090955);
+}
