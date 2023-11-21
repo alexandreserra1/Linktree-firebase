@@ -4,6 +4,7 @@
     "useDefineForClassFields": true,
     "allowSyntheticDefaultImports": true,
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "forceConsistentCasingInFileNames": true,
     "module": "ESNext",
     "skipLibCheck": true,
 
