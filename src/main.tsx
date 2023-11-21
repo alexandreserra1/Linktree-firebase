@@ -1,16 +1,12 @@
-import React from 'react';
-import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router } from 'react-router-dom'; // Alterei a importação do RouterProvider
-import './index.css';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { router } from './App'
+import { RouterProvider } from 'react-router-dom'
 
-const rootElement = document.getElementById('root');
+import './index.css'
 
-if (rootElement) {
-  createRoot(rootElement).render(
-    <React.StrictMode>
-      <Router>
-        {/* Conteúdo da sua aplicação aqui */}
-      </Router>
-    </React.StrictMode>
-  );
-}
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+  <React.StrictMode>
+    <RouterProvider router={router}/>
+  </React.StrictMode>,
+)
